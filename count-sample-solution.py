@@ -1,16 +1,6 @@
-# ==============================
-# NAME: Oscar Pachon
-# DATE: 1/23/2020
-# CLASS: COMP 3006-2
-# HOMEWORK NUMBER: Assignment 2
-# PROGRAM DESCRIPTION:
-"""
-Python script that counts the frequencies of characters in a text file.
-Program calculate those frequencies and print out the results in .CSV
-format. (count.py is a program provided as a solution-problem for the
-assignment 1, count.py, It was writtenby Max Roschke.) I have made small
-modifications to this program for the purpose of the project.
-"""
+#!/usr/bin/env python3
+## Max Roschke
+## Data Science 2, Project 01, Counting Characters -- Reference Implementation
 import sys
 import string
 
@@ -89,8 +79,6 @@ def main():
       ## print that row, if needed (if zero, check print_zeroes first)
       if freq != 0 or print_zeroes:
          print(f'"{c}",{freq}')
-
-   return d
 
 ## when to run the main function
 if __name__ == '__main__':
